@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/style/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <title>Landing Page | movie site</title>
+</head>
+<body>
+  <header>
+    <a href="https://en.wikipedia.org/wiki/List_of_Indian_films_of_2023" class="logo"><span class="ora">Doc</span><span class="whi">udr</span><span class="gree">ama</span></a>
+    <ul class="nav">
+      <li><a href="#"><i class='bx bxs-home'></i></a></li>
+      <li><a href="#">Adult</a></li>
+      <li><a href="#">Kids</a></li>
+      <li><a href="#">Trend</a></li>
+      <li><a href="#">My List</a></li>
+    </ul>
+    
+  </header>
+
+  <div class="banner">
+    <div class="content  rrr active">
+      <img src="/images/rrr.png" alt="" class="movie-title">
+      <h4>
+        <span>2023</span><span><i>12+</i></span><span>2hr 48min</span><span>Revolution</span>
+      </h4>
+      <p>A fearless revolutionary and an officer in the British force, who once shared a deep bond, decide to join forces and chart out an inspirational path of freedom against the despotic rulers.</p>
+      <div class="button">
+        <a href="#"><i class='bx bxs-movie-play'></i>Watch</a>
+        <a href="#"><i class='bx bx-plus'></i>My List</a>
+      </div>
+    </div>
+      
+
+    
+    <div class="carousel-box">
+      <div class="carousel">
+        <div class="carousel-item"
+        onclick="changeBg('images/rrr-picture.jpg','rrr1');"
+        >
+          <img src="/images/rrr1.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/pushpa1.jpg" alt="">
+        </div>
+        <div class="carousel-item"
+        >
+          <img src="/images/rangasthalam1.jpg" alt="">
+        </div>
+        <div class="carousel-item"
+        >
+          <img src="/images/animal1.jpg" alt="">
+        </div>
+        <div class="carousel-item"
+        >
+          <img src="/images/og1.jpg" alt="">
+        </div>
+        <div class="carousel-item"
+        >
+          <img src="/images/hanuman1.jpg" alt="">
+        </div>
+        <div class="carousel-item"
+        >
+          <img src="/images/bk.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <a href="/assets/rrr.mp4" class="play" onclick="
+    tooglevideo();
+    "><i class='bx bx-play-circle'></i>Watch Trailer</a>
+    <ul class="sci">
+      <li>
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+      </li>
+      <li>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+      </li>
+      <li>
+        <a href="#"><i class='bx bx-x'></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="trailer">
+    <video src="/assets/rrr.mp4"
+    muted
+    controls="true"
+    autoplay="true"
+    ></video>
+    <img class="close" src="/images/close.png" alt="" onclick="
+    tooglevideo();
+    ">
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="/script/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+  <script>
+  $(document).ready(function()
+  {
+    $('.carousel').carousel();
+  });
+  </script>
+</body>
+</html>
